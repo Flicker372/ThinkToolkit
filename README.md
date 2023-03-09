@@ -1,6 +1,6 @@
-# Ideapad Toolkit
+# Think Toolkit
 
-**Ideapad Toolkit is a utility that allows you adjust the power setting from Lenovo Vantage, without having to use the slow official app**
+**Think Toolkit is a utility that allows you adjust the power setting from Lenovo Vantage, without having to use the slow official app**
 
 ![image](https://user-images.githubusercontent.com/62750643/193948650-76596fe5-fab3-44aa-b656-fe15a2d93f46.png)
 
@@ -11,6 +11,7 @@
 
 **After running, the app windows can be accessed by double clicking the tray icon**
 ## Supported laptops
+- ThinkBook 15 Gen3 ACL (Windows 10 22H2)
 - Lenovo Flex 5 14ALC05 (Windows 11)
 
 If your model is similar enough, chances are it will work.
@@ -32,7 +33,7 @@ To test, try changing the settings and verify the changes in Lenovo Vantage
 ### How to get PowerBattery.dll
 - Method A
   1. Install Lenovo Vantage from the Microsoft Store
-  2. Copy it from C:\ProgramData\Lenovo\Vantage\Addins\IdeaNotebookAddin\ to the Ideapad Toolkit directory
+  2. Copy it from C:\ProgramData\Lenovo\Vantage\Addins\IdeaNotebookAddin\ to the Think Toolkit directory
   3. Lenovo Vantage can now be uninstalled
 - Method B (Without Microsoft Store)
   1.  Go to https://store.rg-adguard.net/
