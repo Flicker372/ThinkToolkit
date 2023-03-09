@@ -20,11 +20,11 @@
         </Grid.RowDefinitions>
         <ScrollViewer Height="auto" CanContentScroll="True">
             <ui:SimpleStackPanel VerticalAlignment="Stretch" Spacing="16">
-                <TextBlock FontSize="24" Text="Power Profile" />
+                <TextBlock FontSize="24" Text="电源配置" />
                 <ui:SimpleStackPanel>
                     <RadioButton
                         Command="{Binding SetPlanCommand}"
-                        Content="Battery Saving"
+                        Content="省电模式"
                         GroupName="PowerMode"
                         IsChecked="{Binding IsEfficientChecked}">
                         <RadioButton.CommandParameter>
@@ -33,7 +33,7 @@
                     </RadioButton>
                     <RadioButton
                         Command="{Binding SetPlanCommand}"
-                        Content="Intelligent Cooling"
+                        Content="智能模式"
                         GroupName="PowerMode"
                         IsChecked="{Binding IsIntelligentCoolingChecked}">
                         <RadioButton.CommandParameter>
@@ -42,7 +42,7 @@
                     </RadioButton>
                     <RadioButton
                         Command="{Binding SetPlanCommand}"
-                        Content="Extreme Performance"
+                        Content="野兽模式"
                         GroupName="PowerMode"
                         IsChecked="{Binding IsExtremePerformanceChecked}">
                         <RadioButton.CommandParameter>
@@ -50,11 +50,11 @@
                         </RadioButton.CommandParameter>
                     </RadioButton>
                 </ui:SimpleStackPanel>
-                <TextBlock FontSize="24" Text="Battery Charging Mode" />
+                <TextBlock FontSize="24" Text="充电模式" />
                 <ui:SimpleStackPanel>
                     <RadioButton
                         Command="{Binding SetChargingModeCommand}"
-                        Content="Conservation"
+                        Content="电池养护"
                         GroupName="ChargingMode"
                         IsChecked="{Binding IsConservationModeEnabled}">
                         <RadioButton.CommandParameter>
@@ -63,7 +63,7 @@
                     </RadioButton>
                     <RadioButton
                         Command="{Binding SetChargingModeCommand}"
-                        Content="Normal"
+                        Content="正常模式"
                         GroupName="ChargingMode"
                         IsChecked="{Binding IsNormalModeEnabled}">
                         <RadioButton.CommandParameter>
@@ -72,7 +72,7 @@
                     </RadioButton>
                     <RadioButton
                         Command="{Binding SetChargingModeCommand}"
-                        Content="Rapid"
+                        Content="快速充电"
                         GroupName="ChargingMode"
                         IsChecked="{Binding IsRapidModeEnabled}">
                         <RadioButton.CommandParameter>
@@ -83,12 +83,12 @@
                 <TextBlock
                     Margin="0,0,0,0"
                     FontSize="24"
-                    Text="Other" />
+                    Text="其他" />
                 <ui:SimpleStackPanel Spacing="16">
                     <StackPanel Orientation="Horizontal">
                         <ui:ToggleSwitch
                             Width="100"
-                            ui:ControlHelper.Header="Flip to Boot"
+                            ui:ControlHelper.Header="开盖开机"
                             IsEnabled="{Binding IsAdministrator}"
                             IsOn="{Binding IsFlipToBootEnabled}" />
                         <Button
@@ -107,9 +107,9 @@
                         </Button>
                     </StackPanel>
 
-                    <ui:ToggleSwitch ui:ControlHelper.Header="Always on USB" IsOn="{Binding IsAlwaysOnUsbEnabled}" />
+                    <ui:ToggleSwitch ui:ControlHelper.Header="USB持续供电" IsOn="{Binding IsAlwaysOnUsbEnabled}" />
                     <ui:ToggleSwitch
-                        ui:ControlHelper.Header="Always on USB on battery"
+                        ui:ControlHelper.Header="电池模式USB持续供电"
                         IsEnabled="{Binding IsAlwaysOnUsbEnabled}"
                         IsOn="{Binding IsAlwaysOnUsbBatteryEnabled}" />
                 </ui:SimpleStackPanel>

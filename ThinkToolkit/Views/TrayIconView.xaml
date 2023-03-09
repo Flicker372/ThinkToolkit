@@ -25,7 +25,7 @@
                     <ui:RadioMenuItem
                         Command="{Binding SetPlanCommand}"
                         GroupName="PowerPlan"
-                        Header="Battery Saving"
+                        Header="省电模式"
                         IsChecked="{Binding Path=IsEfficientChecked}">
                         <ui:RadioMenuItem.CommandParameter>
                             <system:Int32>2</system:Int32>
@@ -34,7 +34,7 @@
                     <ui:RadioMenuItem
                         Command="{Binding SetPlanCommand}"
                         GroupName="PowerPlan"
-                        Header="Intelligent Cooling"
+                        Header="智能模式"
                         IsChecked="{Binding Path=IsIntelligentCoolingChecked}">
                         <ui:RadioMenuItem.CommandParameter>
                             <system:Int32>1</system:Int32>
@@ -43,7 +43,7 @@
                     <ui:RadioMenuItem
                         Command="{Binding SetPlanCommand}"
                         GroupName="PowerPlan"
-                        Header="Extreme Performance"
+                        Header="野兽模式"
                         IsChecked="{Binding Path=IsExtremePerformanceChecked}">
                         <ui:RadioMenuItem.CommandParameter>
                             <system:Int32>3</system:Int32>
@@ -53,7 +53,7 @@
                     <MenuItem
                         Name="MenuItemExit"
                         Click="MenuItemExit_Click"
-                        Header="Exit" />
+                        Header="退出" />
                 </ContextMenu>
             </FrameworkElement.ContextMenu>
         </tb:TaskbarIcon>

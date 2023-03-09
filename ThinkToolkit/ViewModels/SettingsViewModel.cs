@@ -36,9 +36,9 @@ namespace ThinkToolkit.ViewModels
                 {
                     var dialog = new ContentDialog
                     {
-                        Title = "Error",
+                        Title = "错误",
                         Content = ex.Message,
-                        CloseButtonText = "Ok"
+                        CloseButtonText = "确定"
                     }.ShowAsync();
                     
                 }

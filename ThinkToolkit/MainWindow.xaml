@@ -61,7 +61,7 @@
                 ItemInvoked="NavigationView_ItemInvoked"
                 PaneDisplayMode="Top">
                 <mwpf:NavigationView.MenuItems>
-                    <mwpf:NavigationViewItem Content="Home" Tag="{x:Type views:MainPage}">
+                    <mwpf:NavigationViewItem Content="主页" Tag="{x:Type views:MainPage}">
                         <mwpf:NavigationViewItem.Icon>
                             <mwpf:SymbolIcon Symbol="Home" />
                         </mwpf:NavigationViewItem.Icon>

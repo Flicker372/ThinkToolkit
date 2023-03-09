@@ -225,10 +225,10 @@ namespace ThinkToolkit.ViewModels
         {
             var res = await new ContentDialog
             {
-                Title = "Permission required",
-                Content = "The program will now restart as administrator",
-                PrimaryButtonText = "Ok",
-                SecondaryButtonText = "Cancel"
+                Title = "需要管理员权限",
+                Content = "程序将以管理员身份重新启动",
+                PrimaryButtonText = "确定",
+                SecondaryButtonText = "取消"
             }.ShowAsync();
 
             if (res == ContentDialogResult.Primary)

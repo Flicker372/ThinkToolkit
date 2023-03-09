@@ -13,7 +13,7 @@
 
     <Grid Margin="16">
         <ui:SimpleStackPanel>
-            <ui:ToggleSwitch ui:ControlHelper.Header="Run On Startup" IsOn="{Binding IsRunOnStartupEnabled}" />
+            <ui:ToggleSwitch ui:ControlHelper.Header="开机时自动启动" IsOn="{Binding IsRunOnStartupEnabled}" />
         </ui:SimpleStackPanel>
     </Grid>
 </ui:Page>
